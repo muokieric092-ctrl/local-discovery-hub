@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import campusHero from "@/assets/campus-hero.jpg";
+import campusHeroAsset from "@/assets/campus-classrooms.jpg.asset.json";
 import programLiteracy from "@/assets/program-literacy.jpg";
 import programAgriculture from "@/assets/program-agriculture.jpg";
 import programHeritage from "@/assets/program-heritage.jpg";
@@ -25,10 +25,8 @@ export const Route = createFileRoute("/")({
         content:
           "A grounded primary education in Tala balancing academic excellence with community character.",
       },
-      { property: "og:image", content: campusHero },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: campusHero },
     ],
   }),
   component: Index,
