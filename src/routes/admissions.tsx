@@ -55,10 +55,10 @@ const REQUIREMENTS = [
 
 const FEES = [
   { item: "Registration fee (one-time)", amount: "KSh 1,500" },
-  { item: "Tuition — Pre-Primary (per term)", amount: "KSh 4,500" },
-  { item: "Tuition — Lower Primary (per term)", amount: "KSh 5,500" },
-  { item: "Tuition — Upper Primary (per term)", amount: "KSh 6,500" },
-  { item: "Tuition — Junior School (per term)", amount: "KSh 8,500" },
+  { item: "Tuition — Pre-Primary, Playgroup–PP2 (per term)", amount: "KSh 2,000" },
+  { item: "Tuition — Lower Primary, Grade 1–3 (per term)", amount: "KSh 4,000" },
+  { item: "Tuition — Junior Secondary, Grade 4–6 (per term)", amount: "KSh 6,000" },
+  { item: "Tuition — Grade 7–8 (per term)", amount: "KSh 10,000" },
   { item: "Uniform (full set)", amount: "KSh 2,800" },
 ] as const;
 
