@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import campusHero from "@/assets/campus-hero.jpg";
+import campusHeroAsset from "@/assets/campus-classrooms.jpg.asset.json";
 import programLiteracy from "@/assets/program-literacy.jpg";
 import programAgriculture from "@/assets/program-agriculture.jpg";
 import programHeritage from "@/assets/program-heritage.jpg";
@@ -25,10 +25,8 @@ export const Route = createFileRoute("/")({
         content:
           "A grounded primary education in Tala balancing academic excellence with community character.",
       },
-      { property: "og:image", content: campusHero },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: campusHero },
     ],
   }),
   component: Index,
@@ -98,11 +96,11 @@ function Index() {
           </div>
 
           <img
-            src={campusHero}
-            alt="Children in uniform gathered during morning assembly in a sunlit Kenyan school courtyard"
-            width={1920}
-            height={1080}
-            className="mt-8 w-full rounded-xl object-cover ring-1 ring-black/5"
+            src={campusHeroAsset.url}
+            alt="Classroom block at Mukalwa Junior Academy in Tala, with a covered veranda and garden hedges"
+            width={1080}
+            height={1440}
+            className="mt-8 max-h-[560px] w-full rounded-xl object-cover object-center ring-1 ring-black/5"
           />
         </div>
       </section>
