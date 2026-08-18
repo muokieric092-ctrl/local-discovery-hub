@@ -96,11 +96,11 @@ function Index() {
           </div>
 
           <img
-            src={campusHero}
-            alt="Children in uniform gathered during morning assembly in a sunlit Kenyan school courtyard"
-            width={1920}
-            height={1080}
-            className="mt-8 w-full rounded-xl object-cover ring-1 ring-black/5"
+            src={campusHeroAsset.url}
+            alt="Classroom block at Mukalwa Junior Academy in Tala, with a covered veranda and garden hedges"
+            width={1080}
+            height={1440}
+            className="mt-8 max-h-[560px] w-full rounded-xl object-cover object-center ring-1 ring-black/5"
           />
         </div>
       </section>
