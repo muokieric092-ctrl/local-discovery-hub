@@ -83,8 +83,22 @@ function ContactPage() {
                   <dt className="text-[10px] font-semibold uppercase tracking-wider text-acacia-light">
                     Phone & Email
                   </dt>
-                  <dd className="text-sm text-clay">+254 700 000 000</dd>
-                  <dd className="text-sm text-clay">admin@mukalwa.edu.ke</dd>
+                  <dd className="text-sm text-clay">
+                    <a
+                      href="tel:+254117218382"
+                      className="underline-offset-2 hover:underline"
+                    >
+                      0117 218 382
+                    </a>
+                  </dd>
+                  <dd className="text-sm text-clay">
+                    <a
+                      href="mailto:mukalwajunior@gmail.com"
+                      className="underline-offset-2 hover:underline"
+                    >
+                      mukalwajunior@gmail.com
+                    </a>
+                  </dd>
                 </div>
                 <div className="flex flex-col gap-1">
                   <dt className="text-[10px] font-semibold uppercase tracking-wider text-acacia-light">
