@@ -150,6 +150,41 @@ function AdmissionsPage() {
                 ))}
               </ul>
             </div>
+
+            {/* Payment terms */}
+            <div className="mt-6 rounded-2xl bg-acacia-deep p-6 text-cream">
+              <h3 className="font-serif text-xl font-medium text-cream">
+                How to pay
+              </h3>
+              <p className="mt-2 text-sm text-cream/70">
+                School fees are payable in full or in agreed instalments before
+                the start of each term. Pay via M-Pesa Paybill and quote the
+                pupil's account number.
+              </p>
+              <dl className="mt-4 grid gap-3 sm:grid-cols-2">
+                <div className="rounded-xl bg-cream/5 px-4 py-3 ring-1 ring-cream/10">
+                  <dt className="text-xs font-semibold uppercase tracking-wider text-savanna">
+                    Paybill / Business No.
+                  </dt>
+                  <dd className="mt-1 font-serif text-2xl font-medium text-cream">
+                    247247
+                  </dd>
+                </div>
+                <div className="rounded-xl bg-cream/5 px-4 py-3 ring-1 ring-cream/10">
+                  <dt className="text-xs font-semibold uppercase tracking-wider text-savanna">
+                    Account Number
+                  </dt>
+                  <dd className="mt-1 font-serif text-2xl font-medium text-cream">
+                    643966
+                  </dd>
+                </div>
+              </dl>
+              <p className="mt-4 text-xs text-cream/60">
+                Retain your M-Pesa confirmation message and present it at the
+                school office for a receipt. Please pay at least one week before
+                the term begins.
+              </p>
+            </div>
           </div>
         </div>
       </section>
