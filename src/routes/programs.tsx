@@ -169,6 +169,39 @@ function ProgramsPage() {
         </div>
       </section>
 
+      {/* Transport & Recreation */}
+      <section className="bg-acacia-deep py-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="mb-12 flex flex-col gap-4">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-savanna">
+              Beyond the classroom
+            </span>
+            <h2 className="text-balance font-serif text-3xl font-medium text-cream sm:text-4xl">
+              Transport & Recreation
+            </h2>
+            <p className="max-w-[56ch] text-cream/70 lg:max-w-[48ch]">
+              Learning doesn't stop at the gate. We keep pupils safe on the
+              road and give them room to play, explore, and celebrate together.
+            </p>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {RECREATION.map((r) => (
+              <div
+                key={r.title}
+                className="flex flex-col rounded-2xl bg-cream/5 p-6 ring-1 ring-cream/10"
+              >
+                <span className="text-2xl">{r.icon}</span>
+                <h3 className="mt-4 font-serif text-lg font-medium text-cream">
+                  {r.title}
+                </h3>
+                <p className="mt-2 text-sm text-cream/60">{r.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-secondary py-20 text-center">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-balance font-serif text-3xl font-medium text-acacia-deep sm:text-4xl">
