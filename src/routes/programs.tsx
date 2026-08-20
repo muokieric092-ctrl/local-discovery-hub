@@ -71,6 +71,29 @@ const STAGES = [
   },
 ] as const;
 
+const RECREATION = [
+  {
+    icon: "🚐",
+    title: "School Transport",
+    body: "Safe pick-up and drop-off along designated routes within Tala and surrounding areas, supervised by trained staff.",
+  },
+  {
+    icon: "🏊",
+    title: "Swimming",
+    body: "Structured swimming sessions build water confidence, fitness, and safety awareness under qualified instruction.",
+  },
+  {
+    icon: "🧭",
+    title: "Educational Trips",
+    body: "Termly visits to farms, museums, and nature reserves bring classroom lessons to life across every stage.",
+  },
+  {
+    icon: "🎉",
+    title: "Fun Day",
+    body: "A whole-school celebration of games, music, food, and family — the highlight of every term at Mukalwa.",
+  },
+] as const;
+
 function ProgramsPage() {
   return (
     <>
@@ -166,6 +189,39 @@ function ProgramsPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Transport & Recreation */}
+      <section className="bg-acacia-deep py-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="mb-12 flex flex-col gap-4">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-savanna">
+              Beyond the classroom
+            </span>
+            <h2 className="text-balance font-serif text-3xl font-medium text-cream sm:text-4xl">
+              Transport & Recreation
+            </h2>
+            <p className="max-w-[56ch] text-cream/70 lg:max-w-[48ch]">
+              Learning doesn't stop at the gate. We keep pupils safe on the
+              road and give them room to play, explore, and celebrate together.
+            </p>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {RECREATION.map((r) => (
+              <div
+                key={r.title}
+                className="flex flex-col rounded-2xl bg-cream/5 p-6 ring-1 ring-cream/10"
+              >
+                <span className="text-2xl">{r.icon}</span>
+                <h3 className="mt-4 font-serif text-lg font-medium text-cream">
+                  {r.title}
+                </h3>
+                <p className="mt-2 text-sm text-cream/60">{r.body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
