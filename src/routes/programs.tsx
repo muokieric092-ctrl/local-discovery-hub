@@ -71,6 +71,29 @@ const STAGES = [
   },
 ] as const;
 
+const RECREATION = [
+  {
+    icon: "🚐",
+    title: "School Transport",
+    body: "Safe pick-up and drop-off along designated routes within Tala and surrounding areas, supervised by trained staff.",
+  },
+  {
+    icon: "🏊",
+    title: "Swimming",
+    body: "Structured swimming sessions build water confidence, fitness, and safety awareness under qualified instruction.",
+  },
+  {
+    icon: "🧭",
+    title: "Educational Trips",
+    body: "Termly visits to farms, museums, and nature reserves bring classroom lessons to life across every stage.",
+  },
+  {
+    icon: "🎉",
+    title: "Fun Day",
+    body: "A whole-school celebration of games, music, food, and family — the highlight of every term at Mukalwa.",
+  },
+] as const;
+
 function ProgramsPage() {
   return (
     <>
