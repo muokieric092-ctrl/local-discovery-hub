@@ -2,6 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import programLiteracy from "@/assets/program-literacy.jpg";
 import programAgriculture from "@/assets/program-agriculture.jpg";
 import programHeritage from "@/assets/program-heritage.jpg";
+import educationalTripAsset from "@/assets/educational-trip.jpg.asset.json";
+
+const educationalTrip = educationalTripAsset.url;
 
 export const Route = createFileRoute("/programs")({
   head: () => ({
