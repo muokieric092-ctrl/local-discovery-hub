@@ -2,6 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import programLiteracy from "@/assets/program-literacy.jpg";
 import programAgriculture from "@/assets/program-agriculture.jpg";
 import programHeritage from "@/assets/program-heritage.jpg";
+import educationalTripAsset from "@/assets/educational-trip.jpg.asset.json";
+
+const educationalTrip = educationalTripAsset.url;
 
 export const Route = createFileRoute("/programs")({
   head: () => ({
@@ -221,6 +224,38 @@ function ProgramsPage() {
                 <p className="mt-2 text-sm text-cream/60">{r.body}</p>
               </div>
             ))}
+          </div>
+
+          {/* Featured: real educational trip photo */}
+          <div className="mt-10 grid gap-8 rounded-2xl bg-cream/5 p-6 ring-1 ring-cream/10 lg:grid-cols-2 lg:items-center lg:p-8">
+            <img
+              src={educationalTrip}
+              alt="Mukalwa Junior Academy pupils and staff on a field trip at a directional signpost landmark"
+              loading="lazy"
+              width={746}
+              height={1019}
+              className="h-full max-h-[28rem] w-full rounded-xl object-cover"
+            />
+            <div className="flex flex-col gap-4">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-savanna">
+                Educational Trips in action
+              </span>
+              <h3 className="text-balance font-serif text-2xl font-medium text-cream sm:text-3xl">
+                Seeing the world beyond Tala
+              </h3>
+              <p className="text-sm leading-relaxed text-cream/70">
+                Each term, our pupils step outside the classroom to experience
+                Kenya firsthand — from landmarks and museums to farms and nature
+                reserves. These trips turn textbook lessons into lasting
+                memories, build curiosity, and help children understand their
+                place in a wider world.
+              </p>
+              <p className="text-sm text-cream/60">
+                <span className="font-semibold text-savanna">Recent trip:</span>{" "}
+                pupils and staff pose at a directional signpost during a
+                termly excursion.
+              </p>
+            </div>
           </div>
         </div>
       </section>
