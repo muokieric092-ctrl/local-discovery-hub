@@ -88,7 +88,7 @@ function ContactPage() {
                       href="tel:+254117218382"
                       className="underline-offset-2 hover:underline"
                     >
-                      0117 218 382
+                      0117218382
                     </a>
                   </dd>
                   <dd className="text-sm text-clay">
